@@ -17,7 +17,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-from model import user_results
+from model import user_results, state_capital_dict
 
 # -- Initialization section --
 app = Flask(__name__)
