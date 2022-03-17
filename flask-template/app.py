@@ -37,5 +37,5 @@ def results():
     if request.method == "GET":
         return "You need to fill out your answers first!"
     else:
-        user_answers = {"New York": request.form['state1'], "California": request.form['state2'], "Alabama": request.form['state3'], "Ohio": request.form['state4'], "Oregon": request.form['state5']}
+        user_answers = {"New York": request.form['NY'], "California": request.form['CA'], "Alabama": request.form['AL'], "Ohio": request.form['OH'], "Oregon": request.form['OR']}
         return render_template('results.html', user=user_results(user_answers))
