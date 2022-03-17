@@ -14,7 +14,7 @@
 
 state_capital_dict = {'Alabama': 'montgomery', 'Alaska': 'juneau', 'Arizona': 'phoenix', 'Arkansas': 'little rock', 'California': 'sacramento', 'Colorado': 'denver', 'Connecticut': 'hartford', 'Delaware': 'dover', 'Florida': 'tallahassee', 'Georgia': 'atlanta', 'Hawaii': 'honolulu', 'Idaho': 'boise', 'Illinois': 'springfield', 'Indiana': 'indianapolis', 'Iowa': 'des moines', 'Kansas': 'topeka', 
 'Kentucky': 'frankfort', 'Louisiana': 'baton rouge', 'Maine': 'augusta', 'Maryland': 'annapolis', 'Massachusetts': 'boston', 'Michigan': 'lansing', 'Minnesota': 'saint paul', 'Mississippi': 'jackson', 'Missouri': 'jefferson city', 'Montana': 'helena', 'Nebraska': 'lincoln', 'Nevada': 'carson city', 'New Hampshire': 'concord', 'New Jersey': 'trenton', 'New Mexico': 'santa fe', 'New York': 'albany', 
-'North Carolina': 'raleigh', 'North Dakota': 'bismarck', 'Ohio': 'colombus', 'Oklahoma': 'oklahoma city', 'Oregon': 'salem', 'Pennsylvania': 'harrisburg', 'Rhode Island': 'providence', 'South Carolina': 'columbia', 'South Dakota': 'pierre', 'Tennessee': 'nashville', 'Texas': 'austin', 'Utah': 'salt lake city', 'Vermont': 'montpelier', 'Virginia': 'richmond', 'Washington': 'olympia', 
+'North Carolina': 'raleigh', 'North Dakota': 'bismarck', 'Ohio': 'columbus', 'Oklahoma': 'oklahoma city', 'Oregon': 'salem', 'Pennsylvania': 'harrisburg', 'Rhode Island': 'providence', 'South Carolina': 'columbia', 'South Dakota': 'pierre', 'Tennessee': 'nashville', 'Texas': 'austin', 'Utah': 'salt lake city', 'Vermont': 'montpelier', 'Virginia': 'richmond', 'Washington': 'olympia', 
 'West Virginia': 'charleston', 'Wisconsin': 'madison', 'Wyoming': 'cheyenne'}
 
 def user_results(response_dict):  # {state, capital}
