@@ -27,7 +27,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "hello world"
+    return render_template("index.html")
 
 
 @app.route('/results', methods=['GET', 'POST'])
@@ -35,5 +35,5 @@ def results():
     if request.method == "GET":
         return "You need to fill out your answers first!"
     else:
-        user_answers = {"state1": request.form['state1'], "state2": request.form['state2'], "state3": request.form['state3'], "state4": request.form['state4'], "state5": request.form['state5']}
+        user_answers = {"New York": request.form['state1'], "California": request.form['state2'], "Alabama": request.form['state3'], "Ohio": request.form['state4'], "Oregon": request.form['state5']}
         return render_template('results.html', user=user_results(user_answers))
