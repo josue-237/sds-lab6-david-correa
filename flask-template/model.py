@@ -21,7 +21,7 @@ def user_results(response_dict):  # {state, capital}
     result_return_dict = {}
     for state in response_dict:
         if response_dict[state].lower() == state_capital_dict[state].lower():
-            result_return_dict[state] = "Correct"
+            result_return_dict[state] = "Correct."
         else:
-            result_return_dict[state] = "Incorrect"
+            result_return_dict[state] = f"Incorrect. The correct answer is {state_capital_dict[state]}."
     return result_return_dict  # {state, Correct/Incorrect}
