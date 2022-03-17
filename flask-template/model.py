@@ -17,11 +17,11 @@ state_capital_dict = {'Alabama': 'montgomery', 'Alaska': 'juneau', 'Arizona': 'p
 'North Carolina': 'raleigh', 'North Dakota': 'bismarck', 'Ohio': 'colombus', 'Oklahoma': 'oklahoma city', 'Oregon': 'salem', 'Pennsylvania': 'harrisburg', 'Rhode Island': 'providence', 'South Carolina': 'columbia', 'South Dakota': 'pierre', 'Tennessee': 'nashville', 'Texas': 'austin', 'Utah': 'salt lake city', 'Vermont': 'montpelier', 'Virginia': 'richmond', 'Washington': 'olympia', 
 'West Virginia': 'charleston', 'Wisconsin': 'madison', 'Wyoming': 'cheyenne'}
 
-def user_results(response_dict):
+def user_results(response_dict):  # {state, capital}
     result_return_dict = {}
     for state in response_dict:
         if response_dict[state].lower() == state_capital_dict[state].lower():
             result_return_dict[state] = "Correct"
         else:
             result_return_dict[state] = "Incorrect"
-    return result_return_dict
+    return result_return_dict  # {state, Correct/Incorrect}
