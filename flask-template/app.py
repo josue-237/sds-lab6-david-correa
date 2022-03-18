@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Lab Partners: Josue Estrada, Farouk Balogun
+# Lab Partners: Josue Estrada, Farouk Balogun
 
 # ---- YOUR APP STARTS HERE ----
 # -- Import section --
@@ -26,16 +26,22 @@ app = Flask(__name__)
 
 
 # -- Routes section --
-@app.route('/')
-@app.route('/index')
+@app.route("/")
+@app.route("/index")
 def index():
     return render_template("index.html")
 
 
-@app.route('/results', methods=['GET', 'POST'])
+@app.route("/results", methods=["GET", "POST"])
 def results():
     if request.method == "GET":
         return "You need to fill out your answers first!"
     else:
-        user_answers = {"New York": request.form['NY'], "California": request.form['CA'], "Alabama": request.form['AL'], "Ohio": request.form['OH'], "Oregon": request.form['OR']}
-        return render_template('results.html', user=user_results(user_answers))
+        user_answers = {
+            "New York": request.form["NY"].strip(),
+            "California": request.form["CA"].strip(),
+            "Alabama": request.form["AL"].strip(),
+            "Ohio": request.form["OH"].strip(),
+            "Oregon": request.form["OR"].strip(),
+        }
+        return render_template("results.html", user=user_results(user_answers))
